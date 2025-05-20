@@ -1,0 +1,191 @@
+
+
+
+
+.custom-link {
+    color: #2e2c2c; /* Warna kuning untuk link tertentu */
+  }
+  .custom-link:hover {
+    color: #06b5d4; /* Warna kuning lebih gelap saat hover */
+  }
+#foto {
+  height: 50vh;
+}
+nav{
+  height: 70px;
+}
+
+footer {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            
+            bottom: 0;
+            width: 100%;
+
+}
+#pesan {
+  font-size: 80px;
+  color: #fded04;
+}
+
+#home {
+  position: relative;
+  height: 110vh; /* Membuat section hampir memenuhi satu layar */
+  display: flex;
+  justify-content: center; /* Menyelaraskan konten secara horizontal */
+  align-items: center; /* Menyelaraskan konten secara vertikal */
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Gambar di belakang teks */
+}
+
+.text-overlay {
+  position: relative;
+  z-index: 1; /* Teks berada di depan gambar */
+  color: rgb(0, 0, 0); /* Agar teks terlihat jelas di atas gambar */
+  padding: 20px;
+}
+.container{
+  right: 0;
+  left: 0;
+}
+.leFadeIn span { animation-name: leFadeIn }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+.carousel-item {
+  width: 100%; /* Gunakan 100% agar ikut lebar parent */
+  height: 300px; /* Atur tinggi sesuai keinginan */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Agar gambar tetap proporsional dan penuh */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px; /* Opsional, biar sudut gambar halus */
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden; /* Supaya gambar tidak keluar dari container */
+}
+
+.b{
+  margin-top: 500px;
+  height: 50vh;
+}
+#pesan{
+  color: #8bf;
+  font-size: 60px;
+}
+.ai {
+  font-size: 9vmin;
+  color: #8bf;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "T"; }
+  2.2791%, 25.0698% { content: "Te"; }
+  3.4186%, 23.9302% { content: "Ter"; }
+  4.5581%, 22.7907% { content: "Terb"; }
+  5.6977%, 21.6512% { content: "Terba"; }
+  6.8372%, 20.5116% { content: "Terbai"; }
+  7.9767%, 19.3721% { content: "Terbaik"; }
+  /* 9.1163%, 18.2326% { content: "T"; }
+  10.2558%, 17.0930% { content: "Te"; }  */
+
+  30.7674%, 51.2791% { content: "Ter"; }
+  31.9070%, 50.1395% { content: "Terb"; }
+  33.0465%, 49.0000% { content: "Terbe"; }
+  34.1860%, 47.8605% { content: "Terber"; }
+  35.3256%, 46.7209% { content: "Terbers"; }
+  36.4651%, 45.5814% { content: "Terbersi"; }
+  37.6047%, 44.4419% { content: "Terbersih"; }
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "R"; }
+  56.9767%, 72.9302% { content: "Ra"; }
+  58.1163%, 71.7907% { content: "Ram"; }
+  59.2558%, 70.6512% { content: "Rama"; }
+  60.3953%, 69.5116% { content: "Ramah"; }
+  /* 61.5349%, 68.3721% { content: "reader"; } */
+
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "B"; }
+  80.9070%, 94.5814% { content: "Ba"; }
+  82.0465%, 93.4419% { content: "Bag"; }
+  83.1860%, 92.3023% { content: "Bagu"; }
+  84.3256%, 91.1628% { content: "Bagus"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "writer"; }
+    50% { content: "reader"; }
+    75% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
+
+#m{
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Opsional: biar sudut gambar halus */
+  transition: height 0.5s ease;
+}
